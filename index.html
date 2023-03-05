@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Подключение Bootstrap чтобы все выглядело красиво -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<!-- Свои стили -->
+	<link rel="stylesheet" href="/styles.css">
+
+	<title>«Города-реки»</title>
+
+<script src="/js.js"></script> 
+<script src="/server.js"></script>
+
+</head>
+	<body>
+	<!-- Создание меню на сайте (без функций) -->
+		<div id="knopka"><button onclick="table()">knopka</button></div>
+	<!-- Основная часть страницы -->
+ 	<div class="container">
+		<div class="py-5 text-center">
+			<h2 >Имя-растение-животное-река</h2>
+			<p class="lead">для игры укажите ваше имя и впишите слова в соответствующие поля
+			<br>
+			выиграет тот, у кого окажется больше оригинальных названий(как только первый человек нажмет кнопку "Отправить" ) </p>
+		</div>
+
+		<div class="col">
+
+			<div>
+				<div id="all_mess"></div>
+				<table class="table"></table>
+			</div>
+
+				<div class="row">
+					<form id="messForm">
+						<label for="name">Ваше имя</label>
+						<input type="text" name="name" id="name" placeholder="Введите имя" class="form-control">
+						<br>
+						<label for="message">Сообщение</label>
+						<textarea name="message" id="message1" class="form-control" placeholder="Имя"></textarea>
+						<br>
+						<textarea name="message" id="message2" class="form-control" placeholder="Город"></textarea>
+						<br>
+						<textarea name="message" id="message3" class="form-control" placeholder="Растение"></textarea>
+						<br>
+						<textarea name="message" id="message4" class="form-control" placeholder="Животное"></textarea>
+						<br>
+						<textarea name="message" id="message5" class="form-control" placeholder="Река"></textarea>
+						<br>
+						<input type="submit" value="Отправить" class="btn btn-danger" id="button">
+					</form>
+				</div>
+
+
+
+		</div>
+
+	</div>
+	<!-- Подключаем jQuery, а также Socket.io -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body {
+    background: #d7d9ed;
+
+}
+#button {
+    margin: 0 auto;
+    display: block;
+}
+#baton {
+    position: absolute;
+    left:-100px;
+    top:10px;
+}
+
+::-webkit-input-placeholder {
+    text-align:center;
+    font-size: large;
+    font-weight: bold;
+}
+.table{
+background-color: rgba(9, 36, 36, 0.084);
+position: fixed;
+right: 400px;
+top: 220px;
+width:900px;
+height:600px;  
+display: block;
+}
+#knopka{
+    background-color: rgba(9, 36, 36, 0.084);
+position: fixed;
+left: 200px;
+top: 402px;
+display: block;
+}
